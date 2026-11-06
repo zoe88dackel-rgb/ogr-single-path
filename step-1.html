@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>01 能不能做 · OGR 单线指南</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Onest:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-in">
+      <a class="brand" href="index.html">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.6" viewBox="0 0 24 24"><path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9 4.9 19.1"></path></svg>
+        OGR 单线指南
+      </a>
+      <nav class="progress" aria-label="进度">
+        <a href="step-1.html" aria-current="step">01 准入</a>
+        <a href="step-2.html">02 测算</a>
+        <a href="step-3.html">03 发货</a>
+        <a href="step-4.html">04 回款</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="badge">第 1 / 4 步 · 只讲准入</div>
+      <h1>我的主体和商品，<em>能不能做</em>？</h1>
+      <p class="lead">本页只做初筛。钱、发货、回款后面再出现。最终准入以平台按 SKU 审核为准。</p>
+    </section>
+
+    <section class="panel">
+      <div class="eyebrow">必备条件</div>
+      <h2>先勾这三项。</h2>
+      <p class="section-lead">已有 rFBS、供应链或品牌资源是加分项，不能替代主体与资质。</p>
+      <div class="check-list">
+        <label class="check"><input data-gate="need" type="checkbox" /><div><strong>有中国大陆企业营业执照</strong><span>个体户不支持；出口备案按首次出口要求准备。</span></div></label>
+        <label class="check"><input data-gate="need" type="checkbox" /><div><strong>能开 OGR 支付账户并关联连连</strong><span>账户主体需与开店主体一致。</span></div></label>
+        <label class="check"><input data-gate="need" type="checkbox" /><div><strong>能提供 Seller ID，并与经理确认开通路径</strong><span>有跨境店可在原店开 OGR 供货入口。</span></div></label>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="eyebrow">商品红线</div>
+      <h2>命中这些，先停下。</h2>
+      <div class="grid three">
+        <article class="card danger"><h3>禁止</h3><p>武器、成人用品、酒精烟草、食品饮料、活体、服务与数字商品。不提交、不备货。</p></article>
+        <article class="card warn"><h3>暂不接收</h3><p>医疗器械、药品保健品、化妆品香水、家用/汽车化学品、婴幼儿敏感品、贵金属珠宝。需书面确认。</p></article>
+        <article class="card"><h3>需前置审核</h3><p>品牌 IP、制裁合规、RNPT 追踪、特殊海关与标签要求。资料齐全再等审核。</p></article>
+      </div>
+      <div class="check-list" style="margin-top:14px">
+        <label class="check"><input data-gate="block" type="checkbox" /><div><strong>我的主推品落在禁止或暂不接收</strong><span>勾选后无法进入测算；请换品或先书面确认。</span></div></label>
+        <label class="check"><input data-gate="need" type="checkbox" /><div><strong>主推品不在禁止/暂不接收，准备做 SKU 预审</strong><span>品名、型号、品牌、HS Code、实拍、尺寸重量、含税售价。</span></div></label>
+      </div>
+      <div class="gate" id="gate-msg"></div>
+    </section>
+
+    <section class="panel">
+      <div class="eyebrow">认证怎么判</div>
+      <h2>谁决定要不要 EAC？</h2>
+      <div class="grid two">
+        <article class="card sky"><h3>平台审核 + 清关行</h3><p>开通后提交信息与照片，由他们出具文件清单。不要按大类名称自行判断。</p></article>
+        <article class="card"><h3>你现在只要知道</h3><ul><li>先审 SKU，再备货</li><li>品牌货准备俄罗斯销售授权</li><li>中国证书不一定能直接用</li></ul></article>
+      </div>
+      <p class="note">认证办理细节不在本页展开，避免和第 3 步发货清单重复。</p>
+    </section>
+
+    <div class="nav-foot">
+      <a class="btn light" href="index.html">← 返回首页</a>
+      <a class="btn is-disabled" id="gate-next" href="#gate-msg" aria-disabled="true">通过初筛，去测算 →</a>
+    </div>
+    <p class="source">原文：OGR 卖家手册 · 发货全流程。本页只回答「能不能做」。</p>
+  </main>
+
+  <footer><div class="wrap">OGR 单线指南 · 第 1 步</div></footer>
+  <script src="app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>04 卖了能提多少 · OGR 单线指南</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Onest:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-in">
+      <a class="brand" href="index.html">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.6" viewBox="0 0 24 24"><path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9 4.9 19.1"></path></svg>
+        OGR 单线指南
+      </a>
+      <nav class="progress" aria-label="进度">
+        <a class="done" href="step-1.html">01 准入</a>
+        <a class="done" href="step-2.html">02 测算</a>
+        <a class="done" href="step-3.html">03 发货</a>
+        <a href="step-4.html" aria-current="step">04 回款</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="badge">第 4 / 4 步 · 只讲可提现</div>
+      <h1>卖出去以后，<em>哪些钱能提</em>？</h1>
+      <p class="lead">第 2 步算的是利润估算。本页只区分平台回款与可提现金额，并给出放大路径。</p>
+    </section>
+
+    <section class="panel">
+      <div class="eyebrow">公式只记一次</div>
+      <h2>先扣平台费用，再看可提现。</h2>
+      <div class="grid three">
+        <article class="card sky"><h3>平台回款</h3><p>成交价 − 平台费用</p></article>
+        <article class="card"><h3>不可提现</h3><p>超出供货单确认价的差额；未超过则为 0</p></article>
+        <article class="card ok"><h3>可提现</h3><p>平台回款 − 不可提现部分</p></article>
+      </div>
+      <p class="note">不可提现部分可按规则用于广告、补贴或折扣活动，不计入可提现。</p>
+    </section>
+
+    <section class="panel">
+      <div class="eyebrow">同一票货</div>
+      <h2>三个成交价，结果不同。</h2>
+      <p class="section-lead">示例：确认价 100 元，平台费用 50 元。</p>
+      <div class="grid three">
+        <article class="card"><h3>等于确认价</h3><p>成交 100 → 回款 50 → 不可提现 0 → <strong>可提现 ¥50</strong></p></article>
+        <article class="card warn"><h3>高于确认价</h3><p>成交 110 → 回款 60 → 不可提现 10 → <strong>可提现 ¥50</strong></p></article>
+        <article class="card"><h3>低于确认价</h3><p>成交 90 → 回款 40 → 不可提现 0 → <strong>可提现 ¥40</strong></p></article>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="eyebrow">经营放大</div>
+      <h2>分三阶段，边跑边放大。</h2>
+      <div class="grid three">
+        <article class="card step"><div class="n" style="margin-bottom:10px">01</div><h3>小件试水</h3><p>低风险 SKU，先跑通清关、销售、回款。</p></article>
+        <article class="card step"><div class="n" style="margin-bottom:10px">02</div><h3>扩大 SKU</h3><p>看周转、退货、利润，留下跑得动的款。</p></article>
+        <article class="card step"><div class="n" style="margin-bottom:10px">03</div><h3>进高销量类</h3><p>补齐认证与标签后再扩品。</p></article>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="eyebrow">最短 FAQ</div>
+      <h2>还卡在这几个问题？</h2>
+      <div class="grid two">
+        <article class="card"><h3>要俄罗斯公司吗？</h3><p>不需要，由 Ozon 提供俄罗斯主体。</p></article>
+        <article class="card"><h3>B2B 何时付？</h3><p>确认经济性后、货到揽收点前预付；发货后核算。</p></article>
+        <article class="card"><h3>定价权在谁？</h3><p>你可在后台调价并参与促销。</p></article>
+        <article class="card"><h3>货卖不掉？</h3><p>可继续销售，或按项目规则后续处理。</p></article>
+      </div>
+    </section>
+
+    <div class="nav-foot">
+      <a class="btn light" href="step-3.html">← 上一步</a>
+      <a class="btn" href="step-2.html">复算下一票货 →</a>
+    </div>
+    <p class="source">四步走完。若要重估利润，只回第 2 步；不要再从首页平行入口散开。</p>
+  </main>
+
+  <footer><div class="wrap">OGR 单线指南 · 第 4 步</div></footer>
+</body>
+</html>

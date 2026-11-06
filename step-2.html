@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>02 值不值得 · OGR 单线指南</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Onest:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-in">
+      <a class="brand" href="index.html">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.6" viewBox="0 0 24 24"><path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9 4.9 19.1"></path></svg>
+        OGR 单线指南
+      </a>
+      <nav class="progress" aria-label="进度">
+        <a class="done" href="step-1.html">01 准入</a>
+        <a href="step-2.html" aria-current="step">02 测算</a>
+        <a href="step-3.html">03 发货</a>
+        <a href="step-4.html">04 回款</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="badge">第 2 / 4 步 · 只讲钱</div>
+      <h1>这票货，<em>值不值得发</em>？</h1>
+      <p class="lead">本页只估算整票利润。可提现规则留到第 4 步，避免把「赚多少」和「能提多少」混在一起。</p>
+    </section>
+
+    <section class="panel">
+      <div class="eyebrow">费用只记一次</div>
+      <h2>跨境段先付，本地段卖了再结。</h2>
+      <div class="grid two">
+        <article class="card"><h3>跨境 B2B（参考）</h3><ul><li>国际运费 1.79 元/升</li><li>清关 1600 元/票（固定）</li><li>仓操作 0.98 元/件</li><li>保险 0.09%</li><li>关税约 5–15%（按 HS）</li></ul></article>
+        <article class="card sky"><h3>本地 B2C（参考）</h3><ul><li>开放类目佣金 8%</li><li>销售 VAT 22%（含在售价）</li><li>1 年免仓租</li><li>货到揽收点前完成 B2B 预付</li></ul></article>
+      </div>
+      <p class="note">客单价建议优先测 50–200 元段，便于摊薄 1600 元固定清关费。预估费用，以实际报价和账单为准。</p>
+    </section>
+
+    <section class="panel">
+      <div class="eyebrow">代入你的货</div>
+      <h2>粗算整票净利润。</h2>
+      <div class="calc">
+        <div class="fields">
+          <label class="f" for="price">前台售价（含 VAT）<div class="ipt"><input id="price" type="number" min="0" step="any" value="120" /><span>元/件</span></div></label>
+          <label class="f" for="cost">采购成本<div class="ipt"><input id="cost" type="number" min="0" step="any" value="35" /><span>元/件</span></div></label>
+          <label class="f" for="qty">本票件数<div class="ipt"><input id="qty" type="number" min="1" step="1" value="600" /><span>件</span></div></label>
+          <label class="f" for="liters">单件体积<div class="ipt"><input id="liters" type="number" min="0" step="any" value="1" /><span>升/件</span></div></label>
+        </div>
+        <div class="result">
+          <p>整票净利润（估算）</p>
+          <div class="big" id="out-profit">—</div>
+          <dl>
+            <div><dt>每件利润（估）</dt><dd id="out-unit">—</dd></div>
+            <div><dt>利润率（估）</dt><dd id="out-margin">—</dd></div>
+            <div><dt>B2B 费用合计</dt><dd id="out-b2b">—</dd></div>
+            <div><dt>佣金 8%</dt><dd id="out-commission">—</dd></div>
+            <div><dt>售价中的 VAT 份额</dt><dd id="out-vat">—</dd></div>
+          </dl>
+        </div>
+      </div>
+      <p class="note">关税按 10% 示意；运费按 1.79 元/升。这是利润估算，不是可提现金额。</p>
+    </section>
+
+    <section class="panel">
+      <div class="eyebrow">三种卖法一句话</div>
+      <h2>为什么还在看 OGR？</h2>
+      <div class="grid three">
+        <article class="card sky"><h3>OGR</h3><p>不用注册俄公司 · 本地仓 1–3 天 · 佣金 8% · Ozon 处理本地税务</p></article>
+        <article class="card"><h3>跨境 rFBS</h3><p>也不用俄公司，但时效 15–25 天，佣金按类目档位</p></article>
+        <article class="card"><h3>本土 FBO</h3><p>时效快，但需要俄主体，税务自管，佣金更高档</p></article>
+      </div>
+    </section>
+
+    <div class="nav-foot">
+      <a class="btn light" href="step-1.html">← 上一步</a>
+      <a class="btn" href="step-3.html">测算过了，看怎么发第一票 →</a>
+    </div>
+    <p class="source">本页只回答「值不值得」。可提现公式见第 4 步。</p>
+  </main>
+
+  <footer><div class="wrap">OGR 单线指南 · 第 2 步</div></footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
